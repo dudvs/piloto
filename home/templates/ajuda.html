@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends 'base.html' %}
 
-<nav>
-    <a href="{% url 'index' %}">Home</a> |
-    <a href="{% url 'sobre' %}">Sobre</a> |
-    <a href="{% url 'contato' %}">Contato</a> |
-    <a href="{% url 'ajuda' %}">Ajuda</a>
-</nav>
+{% block titulo %}
+    Ajuda
+{% endblock %}
 
-<head>
-    <meta charset="UTF-8">
-    <title>Ajuda</title>
-</head>
-<body>
+{% block conteudo %}
     <h1>Central de Ajuda</h1>
     <p>Esta é a página de ajuda do sistema.</p>
-</body>
-</html>
+{% endblock %}

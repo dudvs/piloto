@@ -1,19 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends 'base.html' %}
 
-<nav>
-    <a href="{% url 'index' %}">Home</a> |
-    <a href="{% url 'sobre' %}">Sobre</a> |
-    <a href="{% url 'contato' %}">Contato</a> |
-    <a href="{% url 'ajuda' %}">Ajuda</a>
-</nav>
+{% block titulo %}
+    Sobre
+{% endblock %}
 
-<head>
-    <meta charset="UTF-8">
-    <title>Sobre</title>
-</head>
-<body>
-    <h1>Sobre o Sistema</h1>
-    <p>Sistema 1.0 desenvolvido por Duda Vieira!</p>
-</body>
-</html>
+{% block conteudo %}
+    <h1>Sistema 1.0, desenvolvido por mim!</h1>
+{% endblock %}

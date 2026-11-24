@@ -1,19 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends 'base.html' %}
 
-<nav>
-    <a href="{% url 'index' %}">Home</a> |
-    <a href="{% url 'sobre' %}">Sobre</a> |
-    <a href="{% url 'contato' %}">Contato</a> |
-    <a href="{% url 'ajuda' %}">Ajuda</a>
-</nav>
+{% block titulo %}
+    Contato
+{% endblock %}
 
-<head>
-    <meta charset="UTF-8">
-    <title>Contato</title>
-</head>
-<body>
-    <h1>Entre em contato</h1>
-    <p>E-mail: dudav496@gmail.com</p>
-</body>
-</html>
+{% block conteudo %}
+    <h1>Entre em contato conosco: contato@example.com</h1>
+{% endblock %}

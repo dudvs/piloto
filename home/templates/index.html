@@ -1,20 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
 
-<nav>
-    <a href="{% url 'index' %}">Home</a> |
-    <a href="{% url 'sobre' %}">Sobre</a> |
-    <a href="{% url 'contato' %}">Contato</a> |
-    <a href="{% url 'ajuda' %}">Ajuda</a>
-</nav>
+{% block titulo %}
+    Home
+{% endblock %}
 
-<head>
-    <meta charset="UTF-8">
-    <title>Página Principal</title>
-</head>
-<body>
-    <h1>Página Principal</h1>
-    <p>Bem vindo ao nosso site</p>
-</body>
-
-</html>
+{% block conteudo %}
+    <h1>Bem-vindo ao nosso Sistema Web!!</h1>
+{% endblock %}
