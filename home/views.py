@@ -6,10 +6,10 @@ def index(request):
     return render(request, 'index.html')
 
 def sobre(request):
-    return HttpResponse("<h1>Sistema 1.0 desenvolvido por mim mesmo!</h1>")
+    return render(request, 'sobre.html')
 
 def contato(request):
-    return HttpResponse("Esta é a página de contato.")
+    return render(request, 'contato.html')
 
 def ajuda(request):
     return HttpResponse("Esta é a página de ajuda.")
