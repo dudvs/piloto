@@ -16,3 +16,6 @@ def ajuda(request):
 
 def exibir_item(request, id):
     return render(request, 'exibir_item.html', {'id': id})
+
+def perfil(request, usuario):
+    return HttpResponse(f"Você está visualizando o perfil de {usuario}")
