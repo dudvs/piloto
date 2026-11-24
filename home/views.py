@@ -1,7 +1,9 @@
+from django.shortcuts import render
 from django.http import HttpResponse
 
+
 def index(request):
-    return HttpResponse("A view index funciona, Wow!")
+    return render(request, 'index.html')
 
 def sobre(request):
     return HttpResponse("<h1>Sistema 1.0 desenvolvido por mim mesmo!</h1>")
