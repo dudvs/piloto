@@ -12,4 +12,4 @@ def contato(request):
     return render(request, 'contato.html')
 
 def ajuda(request):
-    return HttpResponse("Esta é a página de ajuda.")
+    return render(request, 'ajuda.html')
