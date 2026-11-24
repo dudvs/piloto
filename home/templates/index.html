@@ -8,4 +8,12 @@
     <h1>Página Principal</h1>
     <p>Bem vindo ao nosso site</p>
 </body>
+
+<nav>
+    <a href="{% url 'index' %}">Home</a> |
+    <a href="{% url 'sobre' %}">Sobre</a> |
+    <a href="{% url 'contato' %}">Contato</a> |
+    <a href="{% url 'ajuda' %}">Ajuda</a>
+</nav>
+
 </html>
